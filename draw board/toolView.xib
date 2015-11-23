@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YNQ-m9-gRg" customClass="toolView">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="610"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLY-n5-gTk">
+                    <rect key="frame" x="0.0" y="205" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="直线"/>
+                    <connections>
+                        <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="Ld3-hd-vwu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agt-MG-Rhu">
+                    <rect key="frame" x="0.0" y="250" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="圆"/>
+                    <connections>
+                        <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="rBi-ic-Mxw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGD-1m-Q0J">
+                    <rect key="frame" x="0.0" y="295" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="矩形"/>
+                    <connections>
+                        <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="bf9-tr-QEQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9O-BQ-c2O">
+                    <rect key="frame" x="0.0" y="340" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="椭圆"/>
+                    <connections>
+                        <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="oC2-qK-dfg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMl-ds-Fvx">
+                    <rect key="frame" x="0.0" y="565" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="cancelClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="BVP-bg-9wc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ks-hn-2Ub">
+                    <rect key="frame" x="0.0" y="520" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="cirtainClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="uV2-ZP-Sxb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRY-Or-0Wn">
+                    <rect key="frame" x="0.0" y="475" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="橡皮"/>
+                    <connections>
+                        <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="hCE-N9-psF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOw-9Q-yev">
+                    <rect key="frame" x="0.0" y="430" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="曲线"/>
+                    <connections>
+                        <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="GkK-hv-CM0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ek4-WH-BBI">
+                    <rect key="frame" x="0.0" y="385" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="三角形"/>
+                    <connections>
+                        <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="5aY-zi-KNG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIv-au-bJh">
+                    <rect key="frame" x="0.0" y="160" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="自由"/>
+                    <connections>
+                        <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="VG7-Nx-TEG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5B-KX-RP7">
+                    <rect key="frame" x="0.0" y="70" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="线宽"/>
+                    <connections>
+                        <action selector="lineWidth:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="7sV-aG-FqR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzH-gV-or4">
+                    <rect key="frame" x="0.0" y="115" width="60" height="30"/>
+                    <animations/>
+                    <state key="normal" title="颜色"/>
+                    <connections>
+                        <action selector="colorSet:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="drH-V6-inh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KMl-ds-Fvx" secondAttribute="trailing" id="0mt-uX-p1s"/>
+                <constraint firstItem="ek4-WH-BBI" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="1SR-z1-1ct"/>
+                <constraint firstItem="KMl-ds-Fvx" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="1Ye-6o-Zhb"/>
+                <constraint firstItem="K5B-KX-RP7" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="3ed-8Z-2X6"/>
+                <constraint firstItem="Agt-MG-Rhu" firstAttribute="top" secondItem="YLY-n5-gTk" secondAttribute="bottom" constant="15" id="3zk-s6-9AE"/>
+                <constraint firstAttribute="trailing" secondItem="zRY-Or-0Wn" secondAttribute="trailing" id="5hC-tc-Pzy"/>
+                <constraint firstItem="TGD-1m-Q0J" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="66D-Dy-tDy"/>
+                <constraint firstItem="KMl-ds-Fvx" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="6BA-2G-GHT"/>
+                <constraint firstItem="dzH-gV-or4" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="7Gx-ZG-n7p"/>
+                <constraint firstItem="ek4-WH-BBI" firstAttribute="top" secondItem="e9O-BQ-c2O" secondAttribute="bottom" constant="15" id="9Hi-ls-IzO"/>
+                <constraint firstAttribute="trailing" secondItem="K5B-KX-RP7" secondAttribute="trailing" id="Ab3-xn-tjR"/>
+                <constraint firstAttribute="trailing" secondItem="Agt-MG-Rhu" secondAttribute="trailing" id="B5z-4Z-sTq"/>
+                <constraint firstItem="e9O-BQ-c2O" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="C6h-4b-rpD"/>
+                <constraint firstAttribute="bottom" secondItem="KMl-ds-Fvx" secondAttribute="bottom" constant="15" id="Dgg-bk-eAa"/>
+                <constraint firstAttribute="trailing" secondItem="2Ks-hn-2Ub" secondAttribute="trailing" id="EZs-te-2Bp"/>
+                <constraint firstItem="zRY-Or-0Wn" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="G6n-uH-J2E"/>
+                <constraint firstItem="dzH-gV-or4" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="Gej-wY-ETP"/>
+                <constraint firstItem="2Ks-hn-2Ub" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="IoX-Rb-AaI"/>
+                <constraint firstAttribute="trailing" secondItem="UIv-au-bJh" secondAttribute="trailing" id="JNl-DF-9g2"/>
+                <constraint firstItem="TGD-1m-Q0J" firstAttribute="top" secondItem="Agt-MG-Rhu" secondAttribute="bottom" constant="15" id="KrF-6h-ifz"/>
+                <constraint firstAttribute="trailing" secondItem="e9O-BQ-c2O" secondAttribute="trailing" id="M3t-Aj-jge"/>
+                <constraint firstItem="tOw-9Q-yev" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="MDg-Pk-jQP"/>
+                <constraint firstItem="Agt-MG-Rhu" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="Q9X-ed-e2L"/>
+                <constraint firstItem="e9O-BQ-c2O" firstAttribute="top" secondItem="TGD-1m-Q0J" secondAttribute="bottom" constant="15" id="QVI-44-8IB"/>
+                <constraint firstItem="YLY-n5-gTk" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="R0q-cx-UnW"/>
+                <constraint firstItem="Agt-MG-Rhu" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="Rax-Aa-3F4"/>
+                <constraint firstItem="UIv-au-bJh" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="UbZ-49-Ucw"/>
+                <constraint firstAttribute="trailing" secondItem="YLY-n5-gTk" secondAttribute="trailing" id="V0o-xr-0ax"/>
+                <constraint firstItem="tOw-9Q-yev" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="VVN-Cq-ZFd"/>
+                <constraint firstAttribute="trailing" secondItem="ek4-WH-BBI" secondAttribute="trailing" id="XJu-DJ-V2h"/>
+                <constraint firstAttribute="trailing" secondItem="tOw-9Q-yev" secondAttribute="trailing" id="ZaW-Xa-EZI"/>
+                <constraint firstAttribute="trailing" secondItem="TGD-1m-Q0J" secondAttribute="trailing" id="apR-V1-Ii6"/>
+                <constraint firstItem="TGD-1m-Q0J" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="bic-YK-lY8"/>
+                <constraint firstItem="UIv-au-bJh" firstAttribute="top" secondItem="dzH-gV-or4" secondAttribute="bottom" constant="15" id="c1R-8N-gFc"/>
+                <constraint firstItem="zRY-Or-0Wn" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="dFB-aV-lOX"/>
+                <constraint firstItem="YLY-n5-gTk" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="e4I-ig-aT5"/>
+                <constraint firstItem="K5B-KX-RP7" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="ecv-xM-ypV"/>
+                <constraint firstAttribute="trailing" secondItem="dzH-gV-or4" secondAttribute="trailing" id="eu2-i5-0tX"/>
+                <constraint firstItem="KMl-ds-Fvx" firstAttribute="top" secondItem="2Ks-hn-2Ub" secondAttribute="bottom" constant="15" id="fAf-Py-dOA"/>
+                <constraint firstItem="UIv-au-bJh" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="ftg-fC-dVQ"/>
+                <constraint firstItem="YLY-n5-gTk" firstAttribute="top" secondItem="UIv-au-bJh" secondAttribute="bottom" constant="15" id="gx1-he-Kyi"/>
+                <constraint firstItem="ek4-WH-BBI" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="hW7-XB-iS5"/>
+                <constraint firstItem="tOw-9Q-yev" firstAttribute="top" secondItem="ek4-WH-BBI" secondAttribute="bottom" constant="15" id="nO7-Tk-2RN"/>
+                <constraint firstItem="zRY-Or-0Wn" firstAttribute="top" secondItem="tOw-9Q-yev" secondAttribute="bottom" constant="15" id="oi7-4X-te4"/>
+                <constraint firstItem="dzH-gV-or4" firstAttribute="top" secondItem="K5B-KX-RP7" secondAttribute="bottom" constant="15" id="pwM-Ee-m3t"/>
+                <constraint firstItem="e9O-BQ-c2O" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="x2a-DZ-Z4V"/>
+                <constraint firstItem="2Ks-hn-2Ub" firstAttribute="top" secondItem="zRY-Or-0Wn" secondAttribute="bottom" constant="15" id="yaZ-8S-QP3"/>
+                <constraint firstItem="2Ks-hn-2Ub" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="zDf-sY-oKe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cirtain" destination="2Ks-hn-2Ub" id="9fT-Za-kTf"/>
+                <outlet property="colorSet" destination="dzH-gV-or4" id="uUR-d0-iwI"/>
+                <outlet property="lineWidth" destination="K5B-KX-RP7" id="mUb-N7-kr0"/>
+                <outletCollection property="btns" destination="Agt-MG-Rhu" id="euS-xY-A0y"/>
+                <outletCollection property="btns" destination="YLY-n5-gTk" id="lVh-Mt-GLn"/>
+                <outletCollection property="btns" destination="TGD-1m-Q0J" id="GMd-zg-ej7"/>
+                <outletCollection property="btns" destination="e9O-BQ-c2O" id="jBZ-4b-ptw"/>
+                <outletCollection property="btns" destination="UIv-au-bJh" id="T9K-Xx-HdM"/>
+                <outletCollection property="btns" destination="ek4-WH-BBI" id="c2U-od-jKl"/>
+                <outletCollection property="btns" destination="tOw-9Q-yev" id="MSq-J2-rQN"/>
+                <outletCollection property="btns" destination="zRY-Or-0Wn" id="2M3-lV-UE4"/>
+            </connections>
+            <point key="canvasLocation" x="38" y="321"/>
+        </view>
+    </objects>
+</document>
