@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,14 +16,12 @@
             <subviews>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="1Bc-kb-zTY">
                     <rect key="frame" x="68" y="15" width="299" height="31"/>
-                    <animations/>
                     <connections>
                         <action selector="slider:" destination="Far-2P-abv" eventType="valueChanged" id="PMB-4k-onK"/>
                     </connections>
                 </slider>
             </subviews>
-            <animations/>
-            <color key="backgroundColor" red="0.95198339223861694" green="0.98449867963790894" blue="0.98455840349197388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.94082498550415039" green="0.98122978210449219" blue="0.98045623302459717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="1Bc-kb-zTY" firstAttribute="centerY" secondItem="Far-2P-abv" secondAttribute="centerY" id="HhN-Io-aes"/>
                 <constraint firstItem="1Bc-kb-zTY" firstAttribute="leading" secondItem="Far-2P-abv" secondAttribute="leading" constant="70" id="XVK-uV-u1y"/>

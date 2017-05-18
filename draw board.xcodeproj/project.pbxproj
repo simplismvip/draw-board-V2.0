@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		827C01681BCB95E9007B5B3E /* toolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 827C01671BCB95E9007B5B3E /* toolView.m */; settings = {ASSET_TAGS = (); }; };
-		827C016A1BCB960E007B5B3E /* toolView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827C01691BCB960E007B5B3E /* toolView.xib */; settings = {ASSET_TAGS = (); }; };
+		04D591601EB351E70086ACDC /* JMSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5915F1EB351E70086ACDC /* JMSlider.m */; };
+		827C01681BCB95E9007B5B3E /* toolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 827C01671BCB95E9007B5B3E /* toolView.m */; };
+		827C016A1BCB960E007B5B3E /* toolView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827C01691BCB960E007B5B3E /* toolView.xib */; };
 		829C69081BCA445800F874DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 829C69071BCA445800F874DD /* main.m */; };
 		829C690B1BCA445800F874DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 829C690A1BCA445800F874DD /* AppDelegate.m */; };
 		829C690E1BCA445800F874DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 829C690D1BCA445800F874DD /* ViewController.m */; };
 		829C69111BCA445800F874DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829C690F1BCA445800F874DD /* Main.storyboard */; };
 		829C69131BCA445800F874DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829C69121BCA445800F874DD /* Assets.xcassets */; };
 		829C69161BCA445800F874DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829C69141BCA445800F874DD /* LaunchScreen.storyboard */; };
-		829C691F1BCA44A700F874DD /* DrawBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 829C691E1BCA44A700F874DD /* DrawBoard.m */; settings = {ASSET_TAGS = (); }; };
-		829C69221BCA4EAC00F874DD /* lineWidth.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829C69211BCA4EAC00F874DD /* lineWidth.xib */; settings = {ASSET_TAGS = (); }; };
-		829C69261BCA51DE00F874DD /* lineWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 829C69251BCA51DE00F874DD /* lineWidth.m */; settings = {ASSET_TAGS = (); }; };
-		829C69291BCA59F300F874DD /* PathStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 829C69281BCA59F300F874DD /* PathStyle.m */; settings = {ASSET_TAGS = (); }; };
-		82EFED671BCE094500D9D6B1 /* circleVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EFED641BCE094500D9D6B1 /* circleVIew.m */; settings = {ASSET_TAGS = (); }; };
-		82EFED681BCE094500D9D6B1 /* painter.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EFED661BCE094500D9D6B1 /* painter.m */; settings = {ASSET_TAGS = (); }; };
+		829C691F1BCA44A700F874DD /* DrawBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 829C691E1BCA44A700F874DD /* DrawBoard.m */; };
+		829C69221BCA4EAC00F874DD /* lineWidth.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829C69211BCA4EAC00F874DD /* lineWidth.xib */; };
+		829C69261BCA51DE00F874DD /* lineWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 829C69251BCA51DE00F874DD /* lineWidth.m */; };
+		829C69291BCA59F300F874DD /* PathStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 829C69281BCA59F300F874DD /* PathStyle.m */; };
+		82EFED671BCE094500D9D6B1 /* circleVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EFED641BCE094500D9D6B1 /* circleVIew.m */; };
+		82EFED681BCE094500D9D6B1 /* painter.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EFED661BCE094500D9D6B1 /* painter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04D5915E1EB351E70086ACDC /* JMSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSlider.h; sourceTree = "<group>"; };
+		04D5915F1EB351E70086ACDC /* JMSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSlider.m; sourceTree = "<group>"; };
 		827C01661BCB95E9007B5B3E /* toolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = toolView.h; sourceTree = "<group>"; };
 		827C01671BCB95E9007B5B3E /* toolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = toolView.m; sourceTree = "<group>"; };
 		827C01691BCB960E007B5B3E /* toolView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = toolView.xib; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 				829C690A1BCA445800F874DD /* AppDelegate.m */,
 				829C690C1BCA445800F874DD /* ViewController.h */,
 				829C690D1BCA445800F874DD /* ViewController.m */,
+				04D5915E1EB351E70086ACDC /* JMSlider.h */,
+				04D5915F1EB351E70086ACDC /* JMSlider.m */,
 				829C69201BCA4E6800F874DD /* DrawBoard */,
 				829C690F1BCA445800F874DD /* Main.storyboard */,
 				829C69121BCA445800F874DD /* Assets.xcassets */,
@@ -162,7 +167,7 @@
 				TargetAttributes = {
 					829C69021BCA445800F874DD = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = BG83EUD3LL;
+						DevelopmentTeam = 5ATA948SQL;
 					};
 				};
 			};
@@ -213,6 +218,7 @@
 				829C69291BCA59F300F874DD /* PathStyle.m in Sources */,
 				827C01681BCB95E9007B5B3E /* toolView.m in Sources */,
 				829C69081BCA445800F874DD /* main.m in Sources */,
+				04D591601EB351E70086ACDC /* JMSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5ATA948SQL;
 				INFOPLIST_FILE = "draw board/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.acheng.draw-board";
@@ -340,6 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5ATA948SQL;
 				INFOPLIST_FILE = "draw board/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.acheng.draw-board";

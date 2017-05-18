@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,104 +15,90 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLY-n5-gTk">
-                    <rect key="frame" x="0.0" y="205" width="60" height="30"/>
-                    <animations/>
+                    <rect key="frame" x="0.0" y="190" width="60" height="30"/>
                     <state key="normal" title="直线"/>
                     <connections>
                         <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="Ld3-hd-vwu"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agt-MG-Rhu">
-                    <rect key="frame" x="0.0" y="250" width="60" height="30"/>
-                    <animations/>
+                    <rect key="frame" x="0.0" y="235" width="60" height="30"/>
                     <state key="normal" title="圆"/>
                     <connections>
                         <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="rBi-ic-Mxw"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGD-1m-Q0J">
-                    <rect key="frame" x="0.0" y="295" width="60" height="30"/>
-                    <animations/>
+                    <rect key="frame" x="0.0" y="280" width="60" height="30"/>
                     <state key="normal" title="矩形"/>
                     <connections>
                         <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="bf9-tr-QEQ"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9O-BQ-c2O">
-                    <rect key="frame" x="0.0" y="340" width="60" height="30"/>
-                    <animations/>
+                    <rect key="frame" x="0.0" y="325" width="60" height="30"/>
                     <state key="normal" title="椭圆"/>
                     <connections>
                         <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="oC2-qK-dfg"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMl-ds-Fvx">
-                    <rect key="frame" x="0.0" y="565" width="60" height="30"/>
-                    <animations/>
+                    <rect key="frame" x="0.0" y="550" width="60" height="30"/>
                     <state key="normal" title="取消"/>
                     <connections>
                         <action selector="cancelClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="BVP-bg-9wc"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ks-hn-2Ub">
-                    <rect key="frame" x="0.0" y="520" width="60" height="30"/>
-                    <animations/>
+                    <rect key="frame" x="0.0" y="505" width="60" height="30"/>
                     <state key="normal" title="确定"/>
                     <connections>
                         <action selector="cirtainClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="uV2-ZP-Sxb"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRY-Or-0Wn">
-                    <rect key="frame" x="0.0" y="475" width="60" height="30"/>
-                    <animations/>
+                    <rect key="frame" x="0.0" y="460" width="60" height="30"/>
                     <state key="normal" title="橡皮"/>
                     <connections>
                         <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="hCE-N9-psF"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOw-9Q-yev">
-                    <rect key="frame" x="0.0" y="430" width="60" height="30"/>
-                    <animations/>
+                    <rect key="frame" x="0.0" y="415" width="60" height="30"/>
                     <state key="normal" title="曲线"/>
                     <connections>
                         <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="GkK-hv-CM0"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ek4-WH-BBI">
-                    <rect key="frame" x="0.0" y="385" width="60" height="30"/>
-                    <animations/>
+                    <rect key="frame" x="0.0" y="370" width="60" height="30"/>
                     <state key="normal" title="三角形"/>
                     <connections>
                         <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="5aY-zi-KNG"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="100" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIv-au-bJh">
-                    <rect key="frame" x="0.0" y="160" width="60" height="30"/>
-                    <animations/>
+                    <rect key="frame" x="0.0" y="145" width="60" height="30"/>
                     <state key="normal" title="自由"/>
                     <connections>
                         <action selector="btnClick:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="VG7-Nx-TEG"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5B-KX-RP7">
-                    <rect key="frame" x="0.0" y="70" width="60" height="30"/>
-                    <animations/>
+                    <rect key="frame" x="0.0" y="55" width="60" height="30"/>
                     <state key="normal" title="线宽"/>
                     <connections>
                         <action selector="lineWidth:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="7sV-aG-FqR"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzH-gV-or4">
-                    <rect key="frame" x="0.0" y="115" width="60" height="30"/>
-                    <animations/>
+                    <rect key="frame" x="0.0" y="100" width="60" height="30"/>
                     <state key="normal" title="颜色"/>
                     <connections>
                         <action selector="colorSet:" destination="YNQ-m9-gRg" eventType="touchUpInside" id="drH-V6-inh"/>
                     </connections>
                 </button>
             </subviews>
-            <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="KMl-ds-Fvx" secondAttribute="trailing" id="0mt-uX-p1s"/>
                 <constraint firstItem="ek4-WH-BBI" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="1SR-z1-1ct"/>
@@ -123,7 +113,7 @@
                 <constraint firstAttribute="trailing" secondItem="K5B-KX-RP7" secondAttribute="trailing" id="Ab3-xn-tjR"/>
                 <constraint firstAttribute="trailing" secondItem="Agt-MG-Rhu" secondAttribute="trailing" id="B5z-4Z-sTq"/>
                 <constraint firstItem="e9O-BQ-c2O" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="C6h-4b-rpD"/>
-                <constraint firstAttribute="bottom" secondItem="KMl-ds-Fvx" secondAttribute="bottom" constant="15" id="Dgg-bk-eAa"/>
+                <constraint firstAttribute="bottom" secondItem="KMl-ds-Fvx" secondAttribute="bottom" constant="30" id="Dgg-bk-eAa"/>
                 <constraint firstAttribute="trailing" secondItem="2Ks-hn-2Ub" secondAttribute="trailing" id="EZs-te-2Bp"/>
                 <constraint firstItem="zRY-Or-0Wn" firstAttribute="centerX" secondItem="YNQ-m9-gRg" secondAttribute="centerX" id="G6n-uH-J2E"/>
                 <constraint firstItem="dzH-gV-or4" firstAttribute="leading" secondItem="YNQ-m9-gRg" secondAttribute="leading" id="Gej-wY-ETP"/>

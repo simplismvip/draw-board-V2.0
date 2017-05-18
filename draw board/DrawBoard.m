@@ -68,7 +68,6 @@
 
 - (NSMutableArray*)pathArr
 {
-    
     if (!_pathArr) {
         _pathArr = [NSMutableArray array];
     }
@@ -109,11 +108,11 @@
     
     //创建绘图style
     _currentPathStyle = [PathStyle new];
-    [self.pathStyle addObject:_currentPathStyle];
     _currentPathStyle.color = _currentColor;
     _currentPathStyle.width = _currentWidth;
     _currentPathStyle.drawStyle = _drawStyle;
     _currentPathStyle.printStyle = _printStyle;
+    [self.pathStyle addObject:_currentPathStyle];
     
     //获取当前点
     _currentPoint = [touches.anyObject locationInView:self];
@@ -193,8 +192,7 @@
         //渲染
         if (style.printStyle == PrintStyleStrock) {
             [path stroke];
-        }
-        else {
+        }else {
             [path fill];
         }
     };
@@ -235,17 +233,12 @@
     
     UIButton* clean = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, btnW, H)];
     [clean setTitle:@"清除" forState:UIControlStateNormal];
-    [clean addTarget:self
-              action:@selector(cleanClick:)
-    forControlEvents:UIControlEventTouchUpInside];
+    [clean addTarget:self action:@selector(cleanClick:) forControlEvents:UIControlEventTouchUpInside];
     [bar addSubview:clean];
     
-    UIButton* change =
-    [[UIButton alloc] initWithFrame:CGRectMake(btnW, 0, btnW, H)];
+    UIButton* change = [[UIButton alloc] initWithFrame:CGRectMake(btnW, 0, btnW, H)];
     [change setTitle:@"工具" forState:UIControlStateNormal];
-    [change addTarget:self
-               action:@selector(toolClick)
-     forControlEvents:UIControlEventTouchUpInside];
+    [change addTarget:self action:@selector(toolClick) forControlEvents:UIControlEventTouchUpInside];
     [bar addSubview:change];
     
     //颜色
@@ -257,13 +250,11 @@
     paint.colBlock = ^(UIColor *col){
         _currentColor = col;
         _lastColor = _currentColor;
-        
     };
+    
     //设置线宽
     lineWidth* lineView =
-    [[NSBundle mainBundle] loadNibNamed:@"lineWidth"
-                                  owner:nil
-                                options:nil][0];
+    [[NSBundle mainBundle] loadNibNamed:@"lineWidth" owner:nil options:nil][0];
     lineView.widthBlock = ^(CGFloat width) {
         _currentWidth = width;
     };
@@ -279,12 +270,9 @@
 
 - (void)creatToolBar
 {
-    toolView* toolBar = [[[NSBundle mainBundle] loadNibNamed:@"toolView"
-                                                       owner:nil
-                                                     options:nil] lastObject];
+    toolView* toolBar = [[[NSBundle mainBundle] loadNibNamed:@"toolView" owner:nil options:nil] lastObject];
     [self addSubview:toolBar];
-    toolBar.center = CGPointMake(self.bounds.size.width + toolBar.bounds.size.width * 0.5,
-                                 self.bounds.size.height * 0.5);
+    toolBar.center = CGPointMake(self.bounds.size.width + toolBar.bounds.size.width * 0.5, self.bounds.size.height * 0.5);
     _toolBar = toolBar;
     // tool btn type
     _toolBar.toolBlock = ^(DrawStyle type) {
@@ -303,20 +291,18 @@
     };
     //线宽、颜色
     _toolBar.lineWidthBlock = ^() {
-        [UIView animateWithDuration:0.5
-                         animations:^{
+        
+        [UIView animateWithDuration:0.5 animations:^{
+            
                              if (CGAffineTransformIsIdentity(_lineWidth.transform)) {
-                                 _lineWidth.transform = CGAffineTransformMakeTranslation(
-                                                                                         0, -_lineWidth.bounds.size.height);
-                             }
-                             else {
+                                 _lineWidth.transform = CGAffineTransformMakeTranslation(0, -_lineWidth.bounds.size.height);
+                             }else {
                                  _lineWidth.transform = CGAffineTransformIdentity;
                              }
+            
                              if (CGAffineTransformIsIdentity(_colorPaint.transform)) {
-                                 _colorPaint.transform = CGAffineTransformMakeTranslation(
-                                                                                          0, _colorPaint.bounds.size.height);
-                             }
-                             else {
+                                 _colorPaint.transform = CGAffineTransformMakeTranslation(0, _colorPaint.bounds.size.height);
+                             } else {
                                  _colorPaint.transform = CGAffineTransformIdentity;
                              }
                          }];
@@ -384,8 +370,8 @@
 
 - (void)toolClick
 {
-    [UIView animateWithDuration:0.5
-                     animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
+        
                          if (CGAffineTransformIsIdentity(_toolBar.transform)) {
                              _toolBar.transform = CGAffineTransformTranslate(_toolBar.transform, -_toolBar.bounds.size.width, 0);
                              _lineWidth.transform = CGAffineTransformTranslate(_lineWidth.transform, 0, _colorPaint.bounds.size.height);
@@ -411,6 +397,7 @@
     UIBezierPath* path = _currentPath;
     [path addLineToPoint:_currentPoint];
 }
+
 #pragma mark-------------------画线----------------
 //画线-----开始触摸
 - (void)drawLineTouchBegin
@@ -435,12 +422,16 @@
         _one = _onOne ? _currentPoint : _one;
         _two = _onTwo ? _currentPoint : _two;
     }
+    
+    NSLog(@"%@--%@", NSStringFromCGPoint(_one), NSStringFromCGPoint(_two));
 }
 //画线-----结束触摸
 - (void)drawLineTouchEnd
 {
     if (!CGPointEqualToPoint(_two, _one)) {
         _onDraw = 1;
+        
+        NSLog(@"%@-CGPointEqualToPoint-%@", NSStringFromCGPoint(_one), NSStringFromCGPoint(_two));
     }
 }
 //画线-----
@@ -454,17 +445,10 @@
 //画线-----渲染
 - (void)drawLinePath
 {
-    UIBezierPath* cir1 = [UIBezierPath bezierPathWithArcCenter:_one
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir1 = [UIBezierPath bezierPathWithArcCenter:_one radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir1 fill];
-    UIBezierPath* cir2 = [UIBezierPath bezierPathWithArcCenter:_two
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    
+    UIBezierPath* cir2 = [UIBezierPath bezierPathWithArcCenter:_two radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir2 fill];
     
     [[self drawLine] stroke];
@@ -489,27 +473,15 @@
 - (UIBezierPath*)drawCircle
 {
     CGFloat radius = sqrt(pow((_one.x - _two.x), 2) + pow((_one.y - _two.y), 2));
-    UIBezierPath* path = [UIBezierPath bezierPathWithArcCenter:_one
-                                                        radius:radius
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* path = [UIBezierPath bezierPathWithArcCenter:_one radius:radius startAngle:0 endAngle:2 * M_PI clockwise:1];
     return path;
 }
 //画圆-----渲染
 - (void)drawCirclePath
 {
-    UIBezierPath* cir1 = [UIBezierPath bezierPathWithArcCenter:_one
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir1 = [UIBezierPath bezierPathWithArcCenter:_one radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir1 fill];
-    UIBezierPath* cir2 = [UIBezierPath bezierPathWithArcCenter:_two
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir2 = [UIBezierPath bezierPathWithArcCenter:_two radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir2 fill];
     UIBezierPath* line = [UIBezierPath bezierPath];
     [line moveToPoint:_one];
@@ -528,17 +500,9 @@
 }
 - (void)drawRectanglePath
 {
-    UIBezierPath* cir1 = [UIBezierPath bezierPathWithArcCenter:_one
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir1 = [UIBezierPath bezierPathWithArcCenter:_one radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir1 fill];
-    UIBezierPath* cir2 = [UIBezierPath bezierPathWithArcCenter:_two
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir2 = [UIBezierPath bezierPathWithArcCenter:_two radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir2 fill];
 
     [[self drawRectangle] stroke];
@@ -562,17 +526,9 @@
     CGFloat W = _two.x - _one.x;
     CGFloat H = _two.y - _one.y;
     CGRect rect = CGRectMake(_one.x - W, _one.y - H, 2 * W, 2 * H);
-    UIBezierPath* cir1 = [UIBezierPath bezierPathWithArcCenter:_one
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir1 = [UIBezierPath bezierPathWithArcCenter:_one radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir1 fill];
-    UIBezierPath* cir2 = [UIBezierPath bezierPathWithArcCenter:_two
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir2 = [UIBezierPath bezierPathWithArcCenter:_two radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir2 fill];
     
     UIBezierPath* quad = [UIBezierPath bezierPathWithRect:rect];
@@ -589,8 +545,7 @@
     if (!_onDraw) {
         _two = _currentPoint;
         _three = CGPointMake((_one.x + _two.x) * 0.5, (_one.y + _two.y) * 0.5);
-    }
-    else {
+    }else {
         _one = _onOne ? _currentPoint : _one;
         _two = _onTwo ? _currentPoint : _two;
         _three = _onThree ? _currentPoint : _three;
@@ -607,23 +562,11 @@
 //二次曲线------渲染
 - (void)drawCuverPath
 {
-    UIBezierPath* cir1 = [UIBezierPath bezierPathWithArcCenter:_one
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir1 = [UIBezierPath bezierPathWithArcCenter:_one radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir1 fill];
-    UIBezierPath* cir2 = [UIBezierPath bezierPathWithArcCenter:_two
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir2 = [UIBezierPath bezierPathWithArcCenter:_two radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir2 fill];
-    UIBezierPath* cir3 = [UIBezierPath bezierPathWithArcCenter:_three
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir3 = [UIBezierPath bezierPathWithArcCenter:_three radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir3 fill];
     
     [[self drawCuver] stroke];
@@ -640,23 +583,11 @@
 }
 - (void)drawTrianglePath
 {
-    UIBezierPath* cir1 = [UIBezierPath bezierPathWithArcCenter:_one
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir1 = [UIBezierPath bezierPathWithArcCenter:_one radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir1 fill];
-    UIBezierPath* cir2 = [UIBezierPath bezierPathWithArcCenter:_two
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir2 = [UIBezierPath bezierPathWithArcCenter:_two radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir2 fill];
-    UIBezierPath* cir3 = [UIBezierPath bezierPathWithArcCenter:_three
-                                                        radius:5
-                                                    startAngle:0
-                                                      endAngle:2 * M_PI
-                                                     clockwise:1];
+    UIBezierPath* cir3 = [UIBezierPath bezierPathWithArcCenter:_three radius:5 startAngle:0 endAngle:2 * M_PI clockwise:1];
     [cir3 fill];
     [[self drawTriangle] stroke];
 }

@@ -10,6 +10,4 @@
 
 @interface DrawBoard : UIView
 
-
-
 @end
